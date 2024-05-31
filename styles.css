@@ -1,0 +1,63 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel stiller */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Açık arka plan rengi */
+    color: #333; /* Metin rengi */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Navbar stilleri */
+.navbar {
+    background-color: #fff; /* Navbar arka plan rengi */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Hafif gölge */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Navbar metin rengi */
+}
+
+.nav-link {
+    color: #333; /* Navbar bağlantı rengi */
+}
+
+/* Footer stilleri */
+.footer {
+    background-color: #333; /* Footer arka plan rengi */
+    color: #fff; /* Footer metin rengi */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Link stilleri */
+a {
+    color: #007bff; /* Link rengi */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3; /* Hover rengi */
+}
