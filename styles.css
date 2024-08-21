@@ -203,7 +203,7 @@ body {
     
     .welcome-title {
         font-size: 1.5rem;
-        animation: typing-center 1s steps(20, end) forwards, blink-caret step-end 0.5s forwards;
+        animation: typing-center 1s steps(20, end) forwards, blink-caret step-end 0.7s forwards;
     }
     
     .navbar {
