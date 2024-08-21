@@ -259,6 +259,11 @@ body {
         font-size: 1rem;
     }
 
+    .btn-outline-info {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
     /* Ensure buttons stack in mobile view */
     .text-center.mt-4 {
         flex-direction: column;
