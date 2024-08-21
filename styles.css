@@ -196,11 +196,13 @@ body {
         padding: 15px;
         box-shadow: none;
     }
+
+    .profile-image {
+        margin-bottom: 5px;
+    }
     
     .welcome-title {
         font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
     }
     
     .navbar {
