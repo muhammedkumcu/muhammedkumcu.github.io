@@ -203,7 +203,7 @@ body {
     
     .welcome-title {
         font-size: 1.5rem;
-        animation: typing-center 2s steps(30, end) forwards, blink-caret step-end 1.6s forwards;
+        animation: typing-center 1s steps(20, end) forwards, blink-caret step-end 0.5s forwards;
     }
     
     .navbar {
@@ -250,11 +250,6 @@ body {
     .btn-dark, .btn-outline-orange {
         padding: 10px 15px;
         font-size: 1rem;
-    }
-
-    .btn-outline-info {
-        margin-bottom: 10px;
-        margin-top: 10px;
     }
     
     /* Ensure buttons stack in mobile view */
