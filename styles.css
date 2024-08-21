@@ -1,11 +1,12 @@
+/* Colors: bg: #1a202c, text: #ffffff, main-color: #14164c, side-color: #e2e8f0, active-color: #ff9f1c */
+
 body {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #dae4dc;
-    background: linear-gradient(to right, #ebaca1, #c1d2ed);
+    background-color: #1a202c; 
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -13,50 +14,92 @@ body {
 .container {
     width: 92%;
     max-width: 1200px;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
+    background-color: #1a202c; 
+    padding: 20px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 10px; 
 }
 
-.profile-image {
-    width: 60px;
-    height: 60px;
+/* Navbar Section */
+.navbar {
+    background-color: #2d3748; 
+    border-bottom: 2px solid #1f1f1f; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .nav-link {
-    color: #2b2e4a !important;
+    color: #ffffff; 
+    transition: color 0.3s ease;
 }
 
-.btn-outline-dark {
+.nav-link:hover {
+    border-radius: 20px;
+    color: #ff9f1c; 
+}
+
+.navbar .nav-link.active {
+    background-color: #ff9f1c; 
+    color: #1a202c; 
+    border-radius: 20px; 
+}
+
+ /* Button Section */
+.btn-dark {
+    background-color: #ff9f1c;
+    color: #1f2138;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #1f2138;
+    border-color: #ffffff;
+}
+
+.btn-outline-orange {
     border-width: 1px;
-    border-color: #2b2e4a; 
+    border-color: #ff9f1c; 
+    color: #ff9f1c;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Welcome Message */
+.btn-outline-orange:hover {
+    background-color: #ff9f1c; 
+    color: #1f2138; 
+    border-color: #ffffff;
+}
+
+.btn-icon {
+    width: 22px; 
+    height: 22px;
+    margin-right: 4px;
+    vertical-align: center;
+}
+  
+
 .welcome-title {
     text-align: center;
-    font-size: 2.9rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
     margin-top: 25px;
-    color: #2b2e4a;
+    color: #ffffff;
     position: relative;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing-center 4s steps(14) 0s forwards, blink-caret 0.75s step-end infinite;
+    border-right: 2px solid #ffffff; 
+    animation: typing-center 3s steps(30, end) forwards, blink-caret step-end 1.6s forwards;
 }
 
-/* Typing from center animation */
 @keyframes typing-center {
     0% { width: 0; left: 50%; }
-    50% { width: 0; left: 50%; }
     100% { width: 100%; left: 0; }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+    0% { border-color: white; }
+    100% { border-color: transparent;}
 }
 
 .titles {
@@ -64,66 +107,165 @@ body {
     margin-top: 20px;
     margin-bottom: 12px;
     font-size: 26px;
+    color: #ffffff;
 }
 
+/* Card Section */
 .card {
-    border: 2px solid rgba(0, 0, 0, 0.1); 
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
+    background-color: #14164c;
+    margin-bottom: 24px; 
+    border: none; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    border-radius: 10px; 
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-2 {
+    background-color: #e2e8f0;
+    margin-bottom: 24px; 
+    border: none; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    border-radius: 10px; 
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-5px); 
 }
 
 .card-title {
     font-size: 22px;
     font-weight: 600;
+    color: #ffffff;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
 }
 
 .card-text {
     text-align: justify;
     font-size: 18px;
     line-height: 1.6;
-    color: #333;
+    color: #ffffff; 
+}
+
+/* Contact Section */
+.contact-container {
+    background-color: #e2e8f0; 
+    border-radius: 15px; 
+    width: 500px; 
+    padding: 12px;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .contact-links a {
-    color: #2b2e4a; 
-    border: 1px solid #2b2e4a; 
+    color: #1f2138; 
+    border: 1px solid #1f2138; 
     font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 7px 14px; 
+    transition: all 0.3 ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.btn-outline-dark:hover {
-    background-color: #2b2e4a;
-    color: #fff;
-    border-color: #2b2e4a;
-    transition: all 0.3s ease-in-out;
+.contact-links a:hover {
+    background-color: #1f2138; 
+    color: #e2e8f0; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-.card:hover {
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
-    transition: box-shadow 0.3s ease-in-out;
+.contact-links ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-
-/* Küçük ekranlar için (mobil cihazlar) */
-@media (max-width: 767px) {
-    .navbar-brand img {
-        width: 40px; /* Profil resminin boyutunu küçült */
-        height: 40px;
+/* For mobile phones */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none;
+    }
+    
+    .welcome-title {
+        animation: fade-in 2s ease-in-out forwards;
+        border-right: none;
+        display: flex;
+        justify-content: center;
     }
 
+    @keyframes fade-in {
+        0% { opacity: 0; }
+        100% { opacity: 1}
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-tabs {
+        margin: 0 auto;                 
+    }
+    
     .welcome-title {
-        font-size: 2rem; /* Başlığı küçült */
+        font-size: 2.5rem;
     }
 
     .titles {
-        font-size: 1.5rem; /* Alt başlıkları küçült */
+        font-size: 22px;
+    }
+    
+    .card, .card-2 {
+        margin-bottom: 20px;
     }
 
-    .card {
-        margin-bottom: 15px; /* Kartlar arasındaki boşluğu artır */
+    .card-title {
+        font-size: 20px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+    }
+    
+    .profile-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-container {
+        width: 100%;
+        padding: 10px;
     }
 
-    .container {
-        width: 100%; /* Mobil cihazlarda tam genişlik kullan */
-        padding: 16px; /* Kenarlardan boşluk bırak */
+    .contact-links a {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .btn-dark, .btn-outline-orange {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+
+    /* Ensure buttons stack in mobile view */
+    .text-center.mt-4 {
+        flex-direction: column;
+    }
+
+    .btn-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
     }
 }
