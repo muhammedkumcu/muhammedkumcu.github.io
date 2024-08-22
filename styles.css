@@ -58,7 +58,8 @@ body {
 }
 
 .btn-outline-orange {
-    border-width: 1px;
+    border-width: 2px;
+    font-weight: 550;
     border-color: #ff9f1c; 
     color: #ff9f1c;
     transition: all 0.3s ease-in-out;
@@ -112,7 +113,7 @@ body {
 
 /* Card Section */
 .card {
-    background-color: #14164c;
+    background-color: #131872;
     margin-bottom: 24px; 
     border: none; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
