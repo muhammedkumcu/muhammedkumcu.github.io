@@ -1,1 +1,25 @@
+HTML Tags Used:
+1. <nav> - Creates a navigation bar for site links.
+2. <img> - Embeds images within the page.
+3. <p> - Represents paragraphs of text.
+4. <ul> - Creates an unordered list of items.
+5. <li> - Defines list items within an unordered list.
+6. <body> - Contains the content of the webpage.
+7. <script> - Embeds or links JavaScript code for interactive functionality.
+8. <div> - Defines divisions or sections of the document.
+9. <title> - Sets the title of the webpage displayed in the browser tab.
+10. <link> - Links external resources like CSS files, fonts and icons.
+
+CSS Properties Used:
+1. margin - Defines the space around elements.
+2. animation - Applies animations to elements.
+3. border-radius - Rounds the corners of elements.
+4. box-shadow - Adds shadow effects to elements.
+5. transition - Smooths changes to properties over time.
+
+JavaScript:
+- Implemented a button with download functionality for CV.pdf files to enable users to easily download the CV.
+
+Bootstrap:
+- Used for a responsive navigation bar, grid layout, and well-designed buttons to enhance the site's layout and user experience.
 
