@@ -30,15 +30,33 @@ body {
 }
 
 .nav-link {
+    position: relative;
     color: #000000; 
-    border-width: 2px;
     font-weight: 550;
+    text-decoration: none; 
     transition: color 0.3s ease;
 }
 
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #febf5e;
+    left: 50%;
+    bottom: -5px; 
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 70%; 
+    left: 15%; 
+}
+
 .nav-link:hover {
-    border-radius: 20px;
-    color: #febf5e; 
+    color: #000000; 
+    text-decoration: none; 
+    border-color: transparent !important;
 }
 
 .navbar .nav-link.active {
@@ -49,7 +67,6 @@ body {
 
 /* Button Section */
 .btn-dark {
-    border-width: 2px;
     background-color: #1f2138;
     border-color: #000000;
     color: #ffffff;
@@ -75,7 +92,6 @@ body {
 .btn-orange:hover {
     background-color: #f9b54a; 
     color: #1f2138; 
-    border-color: #000000;
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -163,16 +179,17 @@ body {
 
 /* Contact Section */
 .contact-container {
-    background-color: #ecf0f1; 
+    background-color: #34495e;
     border-radius: 15px; 
     width: 500px; 
     padding: 12px;
     margin: 20px auto; 
-    box-shadow: 0 4px 8px rgba(44, 62, 80, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+
 .contact-links a {
-    background-color: #2c3e50; 
+    background-color: #273747; 
     color: #ffffff; 
     font-size: 1.2rem;
     border-radius: 5px;
@@ -184,9 +201,10 @@ body {
 }
 
 .contact-links a:hover {
-    background-color: #2c3e50; 
+    background-color: #273747; 
     color: #fdf8f1; 
-    transform: translateY(-3px);
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .contact-links ul {
