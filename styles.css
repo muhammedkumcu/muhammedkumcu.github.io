@@ -47,7 +47,7 @@ body {
     border-radius: 20px; 
 }
 
- /* Button Section */
+/* Button Section */
 .btn-dark {
     background-color: #1f2138;
     border-color: #000000;
@@ -56,8 +56,10 @@ body {
 }
 
 .btn-dark:hover {
-    background-color: #1f2138;
+    background-color: #1b1c31;
     border-color: #000000;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .btn-orange {
@@ -70,20 +72,18 @@ body {
 }
 
 .btn-orange:hover {
-    background-color: #febf5e; 
+    background-color: #f9b54a; 
     color: #1f2138; 
     border-color: #000000;
-}
-
-.btn-contact {
-    background-color: #1f2138;
-    height: 30px;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .btn-contact {
     background-color: #1f2138;
     border-color: #ffffff;
     border-width: 2px;
+    height: 30px;
 }
 
 .btn-icon {
@@ -129,15 +129,6 @@ body {
 /* Card Section */
 .card {
     background-color: #ecedff;
-    margin-bottom: 24px; 
-    border: none; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
-    border-radius: 10px; 
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.card-2 {
-    background-color: #e2e8f0;
     margin-bottom: 24px; 
     border: none; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
@@ -238,7 +229,7 @@ body {
         font-size: 22px;
     }
     
-    .card, .card-2 {
+    .card {
         margin-bottom: 20px;
     }
 
