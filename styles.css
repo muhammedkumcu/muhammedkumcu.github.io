@@ -49,6 +49,7 @@ body {
 
 /* Button Section */
 .btn-dark {
+    border-width: 2px;
     background-color: #1f2138;
     border-color: #000000;
     color: #ffffff;
